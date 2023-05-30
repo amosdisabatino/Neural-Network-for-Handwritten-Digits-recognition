@@ -51,12 +51,12 @@ model.save('digits.model')
 
 """
 
-# 1- Loading a pretrained model
+# 1- Loading a pre-trained model
 model = tf.keras.models.load_model('digits.model')
 # 2.1- `cv2.imread()` load the image from the specific file and returns a
 # 'numpy matrix' 3x3;
 # 2.2- `[:, :, 0]`, we pick all the values of the rows, all the values of the
-# columns and '0' because we want to take only the orws and columns of the blue
+# columns and '0' because we want to take only the rows and columns of the blue
 # channel;
 img = cv2.imread('digit.png')[:, :, 0]
 # `invert` method takes the img via two-dimensional array [img], because this
